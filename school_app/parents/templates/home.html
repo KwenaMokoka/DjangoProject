@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyHigh School - Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to SkyHigh School</h1>
+        <p>This is the home page of SkyHigh School.</p>
+        <p>Explore our website to learn more about us.</p>
+        
+        
+            <nav>
+                <ul>
+                    <li><a href="{% url 'parents:home' %}">Home</a></li>
+                    <li><a href="{% url 'parents:contact_us' %}">Contact Us</a></li>
+                    <li><a href="{% url 'parents:about_us' %}">About Us</a></li>
+
+                </ul>
+            </nav>
+    </div>
+</body>
+</html>

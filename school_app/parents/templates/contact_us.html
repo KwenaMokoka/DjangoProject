@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SkyHigh School</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or inquiries, please feel free to contact us.</p>
+        <p>Email: info@skyhighschool.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        
+        <nav>
+            <ul>
+                <li><a href="{% url 'parents:home' %}">Home</a></li>
+                <li><a href="{% url 'parents:contact_us' %}">Contact Us</a></li>
+                <li><a href="{% url 'parents:about_us' %}">About Us</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

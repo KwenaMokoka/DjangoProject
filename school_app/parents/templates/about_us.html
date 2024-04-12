@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SkyHigh School</title>
+                {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>About SkyHigh School</h1>
+        <p>SkyHigh School is a prestigious educational institution dedicated to providing high-quality education to students.</p>
+        <p>Our mission is to inspire and empower students to achieve their full potential.</p>
+        <p>Founded in 20XX, SkyHigh School has been serving the community for over XX years.</p>
+        
+        <nav>
+            <p> login <a href="{% url 'user_auth:login' %}">login</a></p>
+
+            <ul>
+                <li><a href="{% url 'parents:home' %}">Home</a></li>
+                <li><a href="{% url 'parents:contact_us' %}">Contact Us</a></li>
+                <li><a href="{% url 'parents:about_us' %}">About Us</a></li>
+
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
